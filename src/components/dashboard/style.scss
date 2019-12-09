@@ -1,0 +1,32 @@
+@import "./detail/style.scss";
+
+.dashboard {
+  background: $grey;
+  position: relative;
+  font-size: 1.2rem;
+
+  .container {
+    padding: $space-medium-3;
+    position: absolute;
+    top: $navbar-height;
+    bottom: 0;
+    overflow-y: auto;
+  }
+}
+
+.item-detail {
+  height: 100%;
+  margin-left: $space-medium-3;
+  margin-right: $space-small-2;
+  padding: 0 !important;
+  @media (max-width: 768px) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  a {
+    font-size: 1rem;
+    color: $purple;
+    text-decoration: underline;
+  }
+}

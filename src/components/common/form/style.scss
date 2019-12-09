@@ -1,0 +1,18 @@
+.invalid-input.black {
+  border-color: $black;
+}
+
+.password-messages {
+  img {
+    margin-right: 10px;
+  }
+
+  small {
+    color: $black;
+    line-height: 1.5rem;
+  }
+
+  small.passed {
+    color: $green !important;
+  }
+}

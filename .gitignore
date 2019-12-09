@@ -1,0 +1,7 @@
+node_modules
+coverage
+dist
+.vscode
+.terraform/plugins
+terraform.*
+.DS_Store

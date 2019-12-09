@@ -1,0 +1,269 @@
+%sprint-btn {
+  background-color: $white;
+  color: $purple;
+  width: 100%;
+  height: 4rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid $purple;
+  border-radius: 3px;
+  margin-top: $space-large-1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &:hover {
+    background-color: $purple;
+    color: $white;
+  }
+  &:focus {
+    background-color: $purple;
+    color: $white;
+  }
+}
+
+html, body, #root {
+  font-family: $font-family-base !important;
+  color: $txt-default !important;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.app.container {
+  height: 100%;
+}
+
+.container {
+  width: 100% !important;
+  max-width: 100%;
+}
+
+.big-padding {
+  padding: $space-big;
+}
+
+.margin-right-20 {
+  margin-right: 20px;
+}
+.progress {
+  height: 0;
+  margin-bottom: 0 !important;
+}
+
+.landing, .project, .dashboard {
+  min-height: 100%;
+  padding-top: 52px;
+}
+
+.circle-loader-container {
+  max-height: 18px;
+  max-width: 20px;
+  margin-left: -20px;
+  margin-right: 25px !important;
+}
+
+.padding-top-100 {
+  padding-top: 100px;
+}
+
+.scroll-bar {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  &::-webkit-scrollbar-track {
+    background: white; 
+  }
+    
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: #efefef;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }  
+}
+
+/** **/
+
+.vertical-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  text-decoration: none !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.align {
+  align-items: center;
+}
+
+.flex-start {
+  justify-content: flex-start;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-btn {
+  justify-content: space-between;
+}
+
+.large-top-border {
+  border-top: 4px solid $grey;
+}
+
+.yellow {
+  color: #FFDE6B;
+}
+
+.red {
+  color: $red;
+}
+
+.blue {
+  color: $green;
+}
+
+.label {
+  font-weight: normal;
+  color: $black;
+}
+
+.field {
+  margin-bottom: 0 !important;
+  margin-top: $space-medium-2 !important;
+  small {
+    color: $red;
+    font-size: 0.9rem;
+  }
+}
+
+.field:first-child {
+  margin-top: 0 !important;
+}
+
+.invalid-input {
+  border-color: red;
+}
+
+.select {
+  width: 100%;
+
+  select {
+    width: 100%;
+    padding-left: $space-medium-1;
+    border-color: black;
+
+    &:hover {
+      border-color: $purple;
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: $purple;
+    }
+  }
+}
+
+.radio {
+  height: 40px;
+  width: 47%;
+  border: 1px solid;
+  border-radius: $space-small-1;
+
+  input {
+    margin: 0 $space-medium-1;
+  }
+  & > div {
+    align-items: center;
+
+    input[type='radio'] {
+      -webkit-appearance: none;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      outline: none;
+      border: 1px solid $black;
+    }
+
+    input[type='radio']:before {
+      content: '';
+      display: block;
+      width: 71%;
+      height: 71%;
+      margin: 15% auto;
+      border-radius: 50%;
+    }
+
+    input[type="radio"]:checked:before {
+      background: $purple;
+    }
+  
+    input[type="radio"]:checked {
+      border-color:black;
+    }
+  }
+}
+
+.checkbox {
+  border: 1px solid;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+
+  input {
+    margin-right: 1rem;
+  }
+}
+
+.btn-purple {
+  @extend %sprint-btn;
+}
+
+.select:not(.is-multiple):not(.is-loading)::after {
+  border-color: black;
+  right: 1em;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+  font-size: 20px;
+}
+
+.button:focus:not(:active) {
+  box-shadow: none;
+}
+
+.input, .radio, select, .checkbox {
+  border-color: $black;
+  border-radius: 2px !important;
+  height: $space-large-1 !important;
+  box-shadow: none;
+
+  &:hover {
+    border-color: $purple;
+  }
+  &:focus {
+    border-color: $purple;
+    box-shadow: none;
+  }
+}
+
+textarea.input {
+  height: auto !important;
+}

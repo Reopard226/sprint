@@ -1,0 +1,65 @@
+nav.navbar {
+  padding: 0 $space-medium-2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: $aubergine;
+}
+
+.hidden-buger {
+  @media screen and (max-width: 1088px) {
+    display: none;
+  }
+}
+
+.navbar-burger:hover {
+  background-color: $white;
+}
+
+.is-active {
+  box-shadow: none;
+}
+
+.bottom-border {
+  border-bottom: 3px solid #EAEAEA;
+}
+
+.navbar-item {
+  color: $grey;
+}
+
+.navbar-dropdown, .navbar-dropdown:hover {
+  background: $aubergine;
+}
+
+.navbar-item:hover, .navbar-link:hover {
+  background-color: transparent !important;
+  color: $purple !important;
+}
+
+.navbar-menu {
+  background-color: $aubergine;
+}
+
+.navbar-link {
+  background-color: $aubergine !important;
+  span {
+    font-weight: normal;
+    color: $grey;
+    margin-right: 5px;
+  }
+}
+
+.login {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: $purple;
+}
+
+.navbar-end img {
+  border-radius: 50%;
+}

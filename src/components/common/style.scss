@@ -1,0 +1,71 @@
+@import "./form/style.scss";
+
+.react-datepicker-wrapper {
+  width: 100%;
+  .react-datepicker__input-container {
+    width: 100%;
+  }
+}
+
+.item-list {
+  background: $white;
+  height: 100%;
+
+  .ticket {
+    height: $card-item-height;
+    padding: 0 $space-medium-1;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    span {
+      width: 100%;
+      max-width: 14vw;
+      @media (max-width: 1280px) {
+        max-width: 12vw;
+      }
+      @media (max-width: 990px) {
+        max-width: 11vw;
+      }
+      @media (max-width: 768px) {
+        max-width: 100%;
+      }
+      overflow: hidden;
+      white-space: nowrap;
+      overflow-wrap: break-word;
+      text-overflow: ellipsis;
+      height: 1.5rem;
+    }
+  }
+  .item {
+    border-bottom: $space-mini-1 solid $grey;
+  }
+  .item:hover, .chosen {
+    background: $light-blue;
+    color: $black;
+    cursor: pointer;
+  }
+  .lead-item {
+    justify-content: space-between;
+    font-weight: bold;
+    border-bottom: $space-small-2 solid $grey;
+  }
+
+  .clicked {
+    background: $blue;
+    color: $white;
+  }
+}
+
+.item-list-body {
+  overflow-y: auto;
+  height: calc(100% - 65px);
+}
+
+.date-field {
+  display: flex;
+  a {
+    float: right;
+    margin-left: -37px !important;
+    margin-top: 4px !important;
+  }
+}
